@@ -136,11 +136,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 											}
 										} else if (receiveDataFormat.equals(HEXADECIMAL)) {
 											for (int i = 0; i < packetSize; i++) {
-												if (buffer[i] != 0) {
-													stringBuilder.append(delimiter).append(Integer.toHexString(buffer[i]));
-												} else {
-													break;
-												}
+                                                if (buffer[i] != 0) {
+                                                    stringBuilder.append(delimiter).append(Integer.toHexString(buffer[i]));
+                                                } else {
+                                                    break;
+                                                }
 											}
 										} else if (receiveDataFormat.equals(TEXT)) {
 											for (int i = 0; i < packetSize; i++) {
